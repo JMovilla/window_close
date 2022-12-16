@@ -12,7 +12,10 @@
 <script>
     function test()
     {
-        javascript:window.close()
+         setTimeout(function() {
+        window.open('about:blank', '_self').close();
+    }, 100);
+        //javascript:window.close()
     }
 </script>
 </body>
