@@ -9,7 +9,9 @@
     <button onclick="cerrarPestana()">Cerrar pestaña</button>
     <script>
       function cerrarPestana() {
-        self.close();
+        window.open('','_parent','');
+        window.close();
+        //self.close();
       }
     </script>
   </body>
