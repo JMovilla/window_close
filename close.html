@@ -8,11 +8,13 @@
     <p>Haz clic en el botón para cerrar esta pestaña</p>
     <button onclick="cerrarPestana()">Cerrar pestaña</button>
     <script>
+      const sendDataToReactNativeApp = async () => {
+        window.ReactNativeWebView.postMessage('Data from WebView / Website');
+      };
+      
       function cerrarPestana() {
         window.open('','_parent','');
         window.close();
-        window.ReactNativeWebView.postMessage('Data from WebView / Website');
-        //self.close();
       }
     </script>
   </body>
