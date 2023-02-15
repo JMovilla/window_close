@@ -11,7 +11,7 @@
       function cerrarPestana() {
         window.open('','_parent','');
         window.close();
-        window.postMessage("Sending data from WebView");
+        window.ReactNativeWebView.postMessage('Data from WebView / Website');
         //self.close();
       }
     </script>
