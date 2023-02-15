@@ -6,7 +6,7 @@
   <body>
     <h1>Esta es una página de ejemplo</h1>
     <p>Haz clic en el botón para cerrar esta pestaña</p>
-    <button onclick="cerrarPestana()">Cerrar pestaña</button>
+    <button onclick="sendDataToReactNativeApp()">Cerrar pestaña</button>
     <script>
       const sendDataToReactNativeApp = async () => {
         window.ReactNativeWebView.postMessage('Data from WebView / Website');
