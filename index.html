@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="5; url=close.html" />
-    <title>Redirección al ejemplo</title>
+    <meta charset="UTF-8">
+    <title>Abrir y redirigir a una nueva pestaña con JavaScript</title>
   </head>
   <body>
-    <p>Redirigiendo al ejemplo...</p>
+    <h1>Abrir y redirigir a una nueva pestaña con JavaScript</h1>
+    <p>Haz clic en el botón para abrir una nueva pestaña y redirigir a otra página.</p>
+    <button onclick="abrirYRedirigir()">Abrir y redirigir</button>
+    <script>
+      function abrirYRedirigir() {
+        // Abre una nueva pestaña con la URL deseada
+        const nuevaPestana = window.open('https://jmovilla.github.io/window_close/close.html');
+        
+        // Espera un segundo para asegurarse de que la pestaña esté completamente cargada
+        setTimeout(function() {
+          // Redirige a la nueva pestaña a la nueva URL
+          nuevaPestana.location.href = 'https://jmovilla.github.io/window_close/close.html';
+        }, 1000);
+      }
+    </script>
   </body>
 </html>
